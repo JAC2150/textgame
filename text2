@@ -1,0 +1,211 @@
+print ("╔╗╔╦═╦═╦═╦══╦═╦═╦══╦══╦╗╔╗")
+print ("║╚╝║╦╣╬║║║══╣║║║║╔╗║══╣╚╝║")
+print ("║╔╗║╩╣╗╣║╠══║║║║║╠╣╠══║╔╗║")
+print ("╚╝╚╩═╩╩╩═╩══╩╩═╩╩╝╚╩══╩╝╚╝")
+print (" ")
+input ("Press ENTER to countinue")
+print ("\nTutorial\nThe goal of HEROSMASH is to deplete your opponents health to zero.\nYou can do this by powerig up to gain energry.\nOnce you accumalate enough energy you can buy an attack or decide to heal yourself.\nEach attack/heal cost a certain ammount of energy so be sure not to overspend.\nYou get one action a turn so use it well.")
+input ("Press ENTER to countinue")
+print(" ")
+hp1 = 100
+hp2 = 100
+attack1A = 15
+attack1B = 25
+attack1C = 35
+attack2A = 20
+attack2B = 30
+heal1 = 20
+heal2 = 30
+energy1 = 0
+energy2 = 0
+while hp1 > 0 and hp2 > 0:
+    cost = -1
+    while cost < 0:
+        print ("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+        print ("▒▒█░░░░░░█▒▒▒▒▒▒▒▒▒▒▒▒████████▒▒")
+        print ("▒█░░█░░█░░█▒▒▒▒▒▒▒▒▒▒███░██░███▒")
+        print ("▒█░░░░░░░░█▒▒▒▒▒▒▒▒▒▒██████████▒")
+        print ("▒█░░████░░█▒▒▒▒▒▒▒▒▒▒███░░░░███▒")
+        print ("▒▒█░░░░░░█▒▒▒▒▒▒▒▒▒▒▒▒████████▒▒")
+        print ("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+        print ("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        print ("\nAttack:")
+        print ("  1. Fireball / DMG: 15 / ENG: 1 ")
+        print ("  2. Fireblade / DMG: 25 / ENG: 2 ")
+        print ("  3. Inferno Breath / DMG: 35 / ENG: 4 ")
+        print ("4. Heal (HP: 20 / ENG: 3) ")
+        print ("5. Power Up (ENG: +1)")
+        print ("You have {} ENG".format(energy1))
+        action = int(input ("\nPlayer1 choose your action : "))
+        if action == 1:
+            cost = energy1 - 1
+        elif action == 2:
+            cost = energy1 - 2
+        elif action == 3:
+            cost = energy1 - 4
+        elif action == 4:
+            cost = energy1 - 3
+        elif action == 5:
+            cost = 1
+    if action == 1:
+        energy1 = energy1 - 1
+        hp2 = hp2 - attack1A
+        print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒███▒▒▒▒▒██████▒▒▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒█░█▒▒▒▒████████▒▒")
+        print("▒█░░█░░█░░█▒▒▒▒█░█▒▒▒███░██░███▒")
+        print("▒█░░░░░░░░█▒▒▒▒█░█▒▒▒██████████▒")
+        print("▒█░░████░░█▒▒▒█████▒▒███░░░░███▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒▒█▒▒▒▒▒████████▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒█▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        input ("\nPress ENTER to countinue")
+    elif action == 2:
+        energy1 = energy1 - 2
+        hp2 = hp2 - attack1B
+        print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒███▒▒▒▒▒██████▒▒▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒█░█▒▒▒▒████████▒▒")
+        print("▒█░░█░░█░░█▒▒▒▒█░█▒▒▒███░██░███▒")
+        print("▒█░░░░░░░░█▒▒▒▒█░█▒▒▒██████████▒")
+        print("▒█░░████░░█▒▒▒█████▒▒███░░░░███▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒▒█▒▒▒▒▒████████▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒█▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        input ("\nPress ENTER to countinue")
+    elif action == 3:
+        energy1 = energy1 - 4
+        hp2 = hp2 - attack1C
+        print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒███▒▒▒▒▒██████▒▒▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒█░█▒▒▒▒████████▒▒")
+        print("▒█░░█░░█░░█▒▒▒▒█░█▒▒▒███░██░███▒")
+        print("▒█░░░░░░░░█▒▒▒▒█░█▒▒▒██████████▒")
+        print("▒█░░████░░█▒▒▒█████▒▒███░░░░███▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒▒█▒▒▒▒▒████████▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒█▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        input ("\n Press ENTER to countinue")
+    elif action == 4:
+        energy1 = energy1 - 3
+        hp1 = hp1 + heal1
+        print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒█░░░░░░█▒▒▒░░░░░░▒▒▒████████▒▒")
+        print("▒█░░█░░█░░█▒▒░░██░░▒▒███░██░███▒")
+        print("▒█░░░░░░░░█▒▒░████░▒▒██████████▒")
+        print("▒█░░████░░█▒▒░░██░░▒▒███░░░░███▒")
+        print("▒▒█░░░░░░█▒▒▒░░░░░░▒▒▒████████▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        input ("\nPress ENTER to countinue")
+    elif action == 5:
+        energy1 = energy1 + 1
+        print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒█░░░░░░█▒▒▒▒▒░░▒▒▒▒▒████████▒▒")
+        print("▒█░░█░░█░░█▒▒▒░██░▒▒▒███░██░███▒")
+        print("▒█░░░░░░░░█▒▒░████░▒▒██████████▒")
+        print("▒█░░████░░█▒░█░██░█░▒███░░░░███▒")
+        print("▒▒█░░░░░░█▒▒▒▒░██░▒▒▒▒████████▒▒")
+        print("▒▒▒██████▒▒▒▒▒▒░░▒▒▒▒▒▒██████▒▒▒")
+        print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+        print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+        input ("\nPress ENTER to countinue")
+    while hp2 > 0:
+        cost = -1
+        while cost < 0:
+            print ("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+            print ("▒▒█░░░░░░█▒▒▒▒▒▒▒▒▒▒▒▒████████▒▒")
+            print ("▒█░░█░░█░░█▒▒▒▒▒▒▒▒▒▒███░██░███▒")
+            print ("▒█░░░░░░░░█▒▒▒▒▒▒▒▒▒▒██████████▒")
+            print ("▒█░░████░░█▒▒▒▒▒▒▒▒▒▒███░░░░███▒")
+            print ("▒▒█░░░░░░█▒▒▒▒▒▒▒▒▒▒▒▒████████▒▒")
+            print ("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+            print ("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+            print ("\nAttack:")
+            print ("  1. Ice Shard / DMG: 20 / ENG: 1 ")
+            print ("  2. Ice Barrage / DMG: 30 / ENG: 3 ")
+            print ("3. Heal (HP: 30 / ENG: 4) ")
+            print ("4. Power Up (ENG: +1)")
+            print ("You have {} ENG".format(energy2))
+            action = int(input ("\nPlayer2 choose your action : "))
+            if action == 1:
+                cost = energy2 - 1
+            elif action == 2:
+                cost = energy2 - 3
+            elif action == 3:
+                cost = energy2 - 4
+            elif action == 4:
+                cost = 1
+        if action == 1:
+            energy2 = energy2 - 1
+            hp1 = hp1 - attack2A
+            print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒███▒▒▒▒▒██████▒▒▒")
+            print("▒▒█░░░░░░█▒▒▒▒▒█░█▒▒▒▒████████▒▒")
+            print("▒█░░█░░█░░█▒▒▒▒█░█▒▒▒███░██░███▒")
+            print("▒█░░░░░░░░█▒▒▒▒█░█▒▒▒██████████▒")
+            print("▒█░░████░░█▒▒▒█████▒▒███░░░░███▒")
+            print("▒▒█░░░░░░█▒▒▒▒▒▒█▒▒▒▒▒████████▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒▒█▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+            input ("\nPress ENTER to countinue")
+            break
+        elif action == 2:
+            energy2 = energy2 - 2
+            hp1 = hp1 - attack2B
+            print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒███▒▒▒▒▒██████▒▒▒")
+            print("▒▒█░░░░░░█▒▒▒▒▒█░█▒▒▒▒████████▒▒")
+            print("▒█░░█░░█░░█▒▒▒▒█░█▒▒▒███░██░███▒")
+            print("▒█░░░░░░░░█▒▒▒▒█░█▒▒▒██████████▒")
+            print("▒█░░████░░█▒▒▒█████▒▒███░░░░███▒")
+            print("▒▒█░░░░░░█▒▒▒▒▒▒█▒▒▒▒▒████████▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒▒█▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+            input ("\nPress ENTER to countinue")
+            break
+        elif action == 3:
+            energy2 = energy2 - 4
+            hp2 = hp2 + heal2
+            print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒█░░░░░░█▒▒▒░░░░░░▒▒▒████████▒▒")
+            print("▒█░░█░░█░░█▒▒░░██░░▒▒███░██░███▒")
+            print("▒█░░░░░░░░█▒▒░████░▒▒██████████▒")
+            print("▒█░░████░░█▒▒░░██░░▒▒███░░░░███▒")
+            print("▒▒█░░░░░░█▒▒▒░░░░░░▒▒▒████████▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+            input ("\nPress ENTER to countinue")
+            break
+        elif action == 4:
+            energy2 = energy2 + 1
+            print("\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒█░░░░░░█▒▒▒▒▒░░▒▒▒▒▒████████▒▒")
+            print("▒█░░█░░█░░█▒▒▒░██░▒▒▒███░██░███▒")
+            print("▒█░░░░░░░░█▒▒░████░▒▒██████████▒")
+            print("▒█░░████░░█▒░█░██░█░▒███░░░░███▒")
+            print("▒▒█░░░░░░█▒▒▒▒░██░▒▒▒▒████████▒▒")
+            print("▒▒▒██████▒▒▒▒▒▒░░▒▒▒▒▒▒██████▒▒▒")
+            print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+            print ("Player1 HP: {}   player2 HP: {}".format(hp1,hp2))
+            input ("\nPress ENTER to countinue")
+            break
+if hp1 <= 0:
+    print("\nPlayer2 Won!")
+else:
+    print("\nPlayer1 Won!")
