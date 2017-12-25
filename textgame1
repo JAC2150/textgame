@@ -1,0 +1,293 @@
+from random import randint
+p1 = 100
+p2 = 100
+hp1 = 0
+hp2 = 0
+choice = 10
+cost = -1
+player1 = input("Player 1 enter your name : ")
+player2 = input("Player 2 enter your name : ")
+while choice != -1:
+    cost =-1
+    while cost < 0:
+        print ("1.  Punch              5-10 HP /  10 PTS | 2.  Kick           10-25 HP / 25 PTS ")
+        print ("3.  Freeze Breath     15-20 HP /  20 PTS | 4.  Fireball       15-85 HP / 85 PTS ")
+        print ("5.  Infinty Gauntlet  50-65 HP /  65 PTS | 6.  Hand Blast      5-15 HP / 15 PTS ")
+        print ("7.  Heat Vision       30-40 HP /  40 PTS | 8.  Nature          0-50 HP / 50 PTS ")
+        print ("9.  Teleport          23-60 HP /  60 PTS | 10. Lava           50-70 HP / 70 PTS ")
+        print ("11. Ocean             25-35 HP /  35 PTS | 12. Mind Controll  17-67 HP / 75 PTS ")
+        print ("13. Hulk Smash        1-100 HP / 100 PTS | 14. Thor Hammer    50-55 HP / 55 PTS ")
+        print ("15. Ironman Suit      35-45 HP /  45 PTS | 16. Batarang       15-30 HP / 30 PTS ")
+        print ("17. Captain's Sheild  50-80 HP /  80 PTS | 18. Kryptonite     20-90 HP / 90 PTS ")
+        print ("19. Shrink              1-5 HP /   5 PTS | 20. Enlarge        10-35 HP / 35 PTS ")
+        print ("\nYou have {} PTS".format(p1))
+        choice = int(input("{} choose your Powers (-1 to end turn) : ".format(player1)))
+        if choice == 1:
+            cost = p1 - 10
+        elif choice == 2:
+            cost = p1 - 25
+        elif choice == 3:
+            cost = p1 - 20
+        elif choice == 4:
+            cost = p1 - 85
+        elif choice == 5:
+            cost = p1 - 65
+        elif choice == 6:
+            cost = p1 - 15
+        elif choice == 7:
+            cost = p1 - 40
+        elif choice == 8:
+            cost = p1 - 50
+        elif choice == 9:
+            cost = p1 - 60
+        elif choice == 10:
+            cost = p1 - 70
+        elif choice == 11:
+            cost = p1 - 35
+        elif choice == 12:
+            cost = p1 - 75
+        elif choice == 13:
+            cost = p1 - 100
+        elif choice == 14:
+            cost = p1 - 55
+        elif choice == 15:
+            cost = p1 - 45
+        elif choice == 16:
+            cost = p1 - 30
+        elif choice == 17:
+            cost = p1 - 80
+        elif choice == 18:
+            cost = p1 - 90
+        elif choice == 19:
+            cost = p1 - 5
+        elif choice == 20:
+            cost = p1 - 35
+        elif choice == -1:
+            cost = 1
+    p = randint(5,10)
+    k = randint(10,25)
+    fb = randint(15,20)
+    fbb = randint(15,85)
+    ig = randint(50,65)
+    hb = randint(5,15)
+    hv = randint(30,40)
+    n = randint(0,50)
+    t = randint(23,60)
+    l = randint (50,70)
+    o = randint (25,35)
+    mc = randint (17,75)
+    hs = randint (1,100)
+    th = randint (50,55)
+    i = randint (35,45)
+    b = randint (15,30)
+    cs = randint (50,80)
+    k = randint (20,90)
+    s = randint (1,5)
+    el = randint (10,35)
+    if choice == 1:
+        p1 = p1 - 10
+        hp1 = hp1 + p
+    elif choice == 2:
+        p1 = p1 - 25
+        hp1 = hp1 + k
+    elif choice == 3:
+        p1 = p1 - 20
+        hp1 = hp1 + fb
+    elif choice == 4:
+        p1 = p1 - 85
+        hp1 = hp1 + fbb
+    elif choice == 5:
+        p1 = p1 - 65
+        hp1 = hp1 +  ig
+    elif choice == 6:
+        p1 = p1 - 15
+        hp1 = hp1 + hb
+    elif choice == 7:
+        p1 = p1 - 40
+        hp1 = hp1 + hv
+    elif choice == 8:
+        p1 = p1 - 50
+        hp1 = hp1 +  n
+    elif choice == 9:
+        p1 = p1 - 60
+        hp1 = hp1 + t
+    elif choice == 10:
+        p1 = p1 - 70
+        hp1 = hp1 + l
+    elif choice == 11:
+        p1 = p1 - 35
+        hp1 = hp1 + o
+    elif choice == 12:
+        p1 = p1 - 75
+        hp1 = hp1 +  mc
+    elif choice == 13:
+        p1 = p1 - 100
+        hp1 = hp1 + hs
+    elif choice == 14:
+        p1 = p1 - 55
+        hp1 = hp1 + th
+    elif choice == 15:
+        p1 = p1 - 45
+        hp1 = hp1 + i
+    elif choice == 16:
+        p1 = p1 - 30
+        hp1 = hp1 + b
+    elif choice == 17:
+        hp1 = hp1 + cs
+        p1 = p1 - 80
+    elif choice == 18:
+        p1 = p1 - 90
+        hp1 = hp1 + k
+    elif choice == 19:
+        p1 = p1 - 5
+        hp1 = hp1 + s
+    elif choice == 20:
+        p1 = p1 - 35
+        hp1 = hp1 + el
+choice = 10
+while choice != -1:
+    cost = -1
+    while cost < 0:
+        cost = -1
+        print ("1.  Punch              5-10 HP /  10 PTS | 2.  Kick           10-25 HP / 25 PTS ")
+        print ("3.  Freeze Breath     15-20 HP /  20 PTS | 4.  Fireball       15-85 HP / 85 PTS ")
+        print ("5.  Infinty Gauntlet  50-65 HP /  65 PTS | 6.  Hand Blast      5-15 HP / 15 PTS ")
+        print ("7.  Heat Vision       30-40 HP /  40 PTS | 8.  Nature          0-50 HP / 50 PTS ")
+        print ("9.  Teleport          23-60 HP /  60 PTS | 10. Lava           50-70 HP / 70 PTS ")
+        print ("11. Ocean             25-35 HP /  35 PTS | 12. Mind Controll  17-67 HP / 75 PTS ")
+        print ("13. Hulk Smash        1-100 HP / 100 PTS | 14. Thor Hammer    50-55 HP / 55 PTS ")
+        print ("15. Ironman Suit      35-45 HP /  45 PTS | 16. Batarang       15-30 HP / 30 PTS ")
+        print ("17. Captain's Sheild  50-80 HP /  80 PTS | 18. Kryptonite     20-90 HP / 90 PTS ")
+        print ("19. Shrink              1-5 HP /   5 PTS | 20. Enlarge        10-35 HP / 35 PTS ")
+        print ("\nYou have {} PTS".format(p2))
+        choice = int(input("{} choose your Powers (-1 to end turn) : ".format(player2)))
+        if choice == 1:
+            cost = p2 - 10
+        elif choice == 2:
+            cost = p2 - 25
+        elif choice == 3:
+            cost = p2 - 20
+        elif choice == 4:
+            cost = p2 - 85
+        elif choice == 5:
+            cost = p2 - 65
+        elif choice == 6:
+            cost = p2 - 15
+        elif choice == 7:
+            cost = p2 - 40
+        elif choice == 8:
+            cost = p2 - 50
+        elif choice == 9:
+            cost = p2 - 60
+        elif choice == 10:
+            cost = p2 - 70
+        elif choice == 11:
+            cost = p2 - 35
+        elif choice == 12:
+            cost = p2 - 75
+        elif choice == 13:
+            cost = p2 - 100
+        elif choice == 14:
+            cost = p2 - 55
+        elif choice == 15:
+            cost = p2 - 45
+        elif choice == 16:
+            cost = p2 - 30
+        elif choice == 17:
+            cost = p2 - 80
+        elif choice == 18:
+            cost = p2 - 90
+        elif choice == 19:
+            cost = p2 - 5
+        elif choice == 20:
+            cost = p2 - 35
+        elif choice == -1:
+            cost = 1
+    p = randint(5,10)
+    k = randint(10,25)
+    fb = randint(15,20)
+    fbb = randint(15,85)
+    ig = randint(50,65)
+    hb = randint(5,15)
+    hv = randint(30,40)
+    n = randint(0,50)
+    t = randint(23,60)
+    l = randint (50,70)
+    o = randint (25,35)
+    f = randint (17,67)
+    hs = randint (1,100)
+    th = randint (50,55)
+    i = randint (35,45)
+    b = randint (15,30)
+    cs = randint (50,80)
+    k = randint (20,90)
+    s = randint (1,5)
+    el = randint (10,35)
+    if choice == 1:
+        p2 = p2 - 10
+        hp2 = hp2 + p
+    elif choice == 2:
+        p2 = p2 - 25
+        hp2 = hp2 + k
+    elif choice == 3:
+        p2 = p2 - 20
+        hp2 = hp2 + fb
+    elif choice == 4:
+        p2 = p2 - 85
+        hp2 = hp2 + fbb
+    elif choice == 5:
+        p2 = p2 - 65
+        hp2 = hp2 +  ig
+    elif choice == 6:
+        p2 = p2 - 15
+        hp2 = hp2 + hb
+    elif choice == 7:
+        p2 = p2 - 40
+        hp2 = hp2 + hv
+    elif choice == 8:
+        p2 = p2 - 50
+        hp2 = hp2 +  n
+    elif choice == 9:
+        p2 = p2 - 60
+        hp2 = hp2 + t
+    elif choice == 10:
+        p2 = p2 - 70
+        hp2 = hp2 + l
+    elif choice == 11:
+        p2 = p2 - 35
+        hp2 = hp2 + o
+    elif choice == 12:
+        p2 = p2 - 75
+        hp2 = hp2 +  mc
+    elif choice == 13:
+        p2 = p2 - 100
+        hp2 = hp2 + hs
+    elif choice == 14:
+        p2 = p2 - 55
+        hp2 = hp2 + th
+    elif choice == 15:
+        p2 = p2 - 45
+        hp2 = hp2 + i
+    elif choice == 16:
+        p2 = p2 - 30
+        hp2 = hp2 + b
+    elif choice == 17:
+        p2 = p2 - 80
+        hp2 = hp2 + cs
+    elif choice == 18:
+        p2 = p1 - 90
+        hp2 = hp2 + k
+    elif choice == 19:
+        p2 = p2 - 5
+        hp2 = hp2 + s
+    elif choice == 20:
+        p2 = p2 - 35
+        hp2 = hp2 + el
+print ("{} : {} HP vs. {} : {} HP".format(player1,hp1,player2,hp2))
+final = hp2 - hp1
+if final > 0:
+    print("{} you WON!".format(player2))
+elif final < 0:
+    print("{} you WON!".format(player1))
+else:
+    print("{} and {} you tied.".format(player1,player2))
