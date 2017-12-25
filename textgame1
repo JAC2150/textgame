@@ -283,7 +283,7 @@ while choice != -1:
     elif choice == 20:
         p2 = p2 - 35
         hp2 = hp2 + el
-print ("{} : {} HP vs. {} : {} HP".format(player1,hp1,player2,hp2))
+print ("{}: {} HP vs. {}: {} HP".format(player1,hp1,player2,hp2))
 final = hp2 - hp1
 if final > 0:
     print("{} you WON!".format(player2))
