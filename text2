@@ -4,7 +4,7 @@ print ("║╔╗║╩╣╗╣║╠══║║║║║╠╣╠══║╔
 print ("╚╝╚╩═╩╩╩═╩══╩╩═╩╩╝╚╩══╩╝╚╝")
 print (" ")
 input ("Press ENTER to countinue")
-print ("\nTutorial\nThe goal of HEROSMASH is to deplete your opponents health to zero.\nYou can do this by powerig up to gain energry.\nOnce you accumalate enough energy you can buy an attack or decide to heal yourself.\nEach attack/heal cost a certain ammount of energy so be sure not to overspend.\nYou get one action a turn so use it well.")
+print ("\nTutorial\nThe goal of HEROSMASH is to deplete your opponents health to zero.\nYou can do this by powerig up to gain energry(ENG).\nOnce you accumalate enough energy you can buy an attack or decide to heal yourself.\nEach attack/heal cost a certain ammount of energy so be sure not to overspend.\nYou get one action a turn so use it well.")
 input ("Press ENTER to countinue")
 print(" ")
 hp1 = 100
