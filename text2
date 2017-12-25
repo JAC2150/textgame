@@ -11,7 +11,7 @@ hp1 = 100
 hp2 = 100
 attack1A = 15
 attack1B = 25
-attack1C = 35
+attack1C = 40
 attack2A = 20
 attack2B = 30
 heal1 = 20
@@ -34,7 +34,7 @@ while hp1 > 0 and hp2 > 0:
         print ("\nAttack:")
         print ("  1. Fireball / DMG: 15 / ENG: 1 ")
         print ("  2. Fireblade / DMG: 25 / ENG: 2 ")
-        print ("  3. Inferno Breath / DMG: 35 / ENG: 4 ")
+        print ("  3. Inferno Breath / DMG: 40 / ENG: 4 ")
         print ("4. Heal (HP: 20 / ENG: 3) ")
         print ("5. Power Up (ENG: +1)")
         print ("You have {} ENG".format(energy1))
