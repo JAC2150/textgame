@@ -1,0 +1,15 @@
+import os
+import json
+data = json.load(open("data.json"))
+os.system('clear')
+print ("Dictionary Application V 3.1")
+print ("")
+word = input("Enter a word to define : ")
+word = word.lower()
+os.system('clear')
+if word in data:
+    print ("The defintion of {} is ...".format(word))
+    print ("")
+    print (data[word])
+else:
+    print ("Sorry. Your word, {}, is not included in our Dictionary.".format(word))
