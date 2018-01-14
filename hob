@@ -21,10 +21,10 @@ def caps(word):
 def caps2(word):
     for x in data:
         if x.istitle():
-df=x.lower()
+            df=x.lower()
             if df == word:
                 void = 2
-caps2(word)
+void = caps2(word)
 if word in data:
     define(word)
 elif void == 2 :
