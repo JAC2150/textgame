@@ -31,4 +31,3 @@ elif void == 2 :
     caps(word)
 else:
     print ("Sorry. Your word, {}, is not included in our Dictionary.".format(word))
-
